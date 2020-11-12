@@ -9,7 +9,12 @@ To-do:
 	- Add mockup data for demo presentation.
 	- Add Month view selection.
 	- Add Year view selection.
-
+	- Fix minor bug due to component extraction.
+	- Add theme support.
+	- Migrate to react hook function component.
+	- Add component tests.
+	- Migrate CSS3 to SCSS.
+ 
 ## Available Scripts
 
 Work in progress...
