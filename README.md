@@ -4,7 +4,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 Please, do not use this repository for production it is for reference only! 
 
-Inline-style: 
+Demo: 
+
 ![alt text](https://raw.githubusercontent.com/Choleski94/date-range-picker/main/public/assets/img/demo.gif "Date Range Picker For React")
 
 To-do:
