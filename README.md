@@ -2,6 +2,14 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+To-do:
+
+	- Add support for RTL languages (Arabic, Hebrew, Urdu, ...)
+	- Migrate from moment.js to day.js
+	- Add mockup data for demo presentation.
+	- Add Month view selection.
+	- Add Year view selection.
+
 ## Available Scripts
 
 Work in progress...
