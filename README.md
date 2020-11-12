@@ -2,6 +2,11 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+Please, do not use this repository for production it is for reference only! 
+
+Inline-style: 
+![alt text](https://raw.githubusercontent.com/Choleski94/date-range-picker/main/public/assets/img/demo.gif "Date Range Picker For React")
+
 To-do:
 
 	- Add support for RTL languages (Arabic, Hebrew, Urdu, ...)
