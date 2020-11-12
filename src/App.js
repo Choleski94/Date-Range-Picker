@@ -380,14 +380,7 @@ class App extends React.Component {
 		const transactionsSection = this.renderTransactions();
 
 		return (
-			<main id="app-wrapper" 
-				data-sidebartype="mini-sidebar"
-				data-sidebar-position="fixed"
-				data-header-position="fixed"
-				data-boxed-layout="boxed"
-				data-layout="horizontal"
-				data-page-type="app"
-				dir="ltr">
+			<main id="app-wrapper" dir="ltr">
 				<section className="page-wrapper">
 					<div className="container-fluid">
 						<div className="row">
