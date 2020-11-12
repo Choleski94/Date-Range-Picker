@@ -173,17 +173,9 @@ class App extends React.Component {
 					Filter <i className="fa fa-home align-middle"/>
 				</a>
 				<div className="d-inline-block d-md-none mb-1 collapsed float-right">
-					<button type="button" className="btn btn-primary dropdown-toggle statement-btn" data-toggle="dropdown">
+					<button type="button" className="btn btn-primary statement-btn" data-toggle="dropdown">
 						<i className="ti-align-justify"/> Statement
 					</button>
-					<div className="dropdown-menu">
-						<a href className="dropdown-item">
-							<i className="ti-printer"/> Print
-						</a>
-						<a href className="dropdown-item">
-							<i className="ti-file"/> Export CSV
-						</a>
-					</div>
 				</div>
 				<div className="d-md-block collapse" id="filterOptions">
 					<div className="d-md-flex">
@@ -197,18 +189,10 @@ class App extends React.Component {
 						</div>
 						<div className="statement-section">
 							<div className="dropdown np-btn">
-								<button type="button" className="btn btn-primary dropdown-toggle statement-btn" data-toggle="dropdown">
+								<button type="button" className="btn btn-primary statement-btn" data-toggle="dropdown">
 									<i className="ti-align-justify"/>
 									<div className="font-10">Statement</div>
 								</button>
-			    					<div className="dropdown-menu dropdown-menu-right">
-									<a href className="dropdown-item">
-										<i className="ti-printer"/> Print
-									</a>
-									<a href className="dropdown-item">
-										<i className="ti-file"/> Export CSV
-									</a>
-								</div>
 							</div>
 						</div>
 					</div>
@@ -229,7 +213,7 @@ class App extends React.Component {
 									Price
 								</td>
 								<td className="text-right text-muted text-uppercase">
-									{priceCorrection(asset.price)} {asset.quote}
+									{priceCorrection(asset.price || 0)} {asset.quote || ''}
 								</td>
 							</tr>
 							<tr>
@@ -237,7 +221,7 @@ class App extends React.Component {
 									Fee ({evaluateFeePercent(asset.price, asset.fee)}%)
 								</td>
 								<td className="text-right text-muted text-uppercase">
-									{asset.fee} {asset.quote}
+									{asset.fee || ''} {asset.quote || ''}
 								</td>
 							</tr>
 							<tr>
@@ -245,7 +229,7 @@ class App extends React.Component {
 									Total
 								</td>
 								<td className="text-right text-muted text-uppercase">
-									{priceCorrection(asset.total)} {asset.quote}
+									{priceCorrection(asset.total || 0)} {asset.quote || ''}
 								</td>
 							</tr>
 						</tbody>
@@ -293,7 +277,7 @@ class App extends React.Component {
 											<span className="amount">
 												{priceCorrection(formatTransactionPrice(record.amount, record.type), false, false)}
 												<span className="currency text-muted">
-													{(record.pair.split('/')[0]).toUpperCase()}
+													{(record.pair.split('/')[0] || '').toUpperCase()}
 												</span>
 											</span>
 
